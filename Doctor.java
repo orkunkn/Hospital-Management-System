@@ -10,7 +10,7 @@ public class Doctor {
         this.doctorName = doctorName;
     }
 
-    void printInfos(){
+    public void printInfos(){
         System.out.println("Doctor's name: " + doctorName);
         System.out.println("ID: " + doctorID);
         System.out.println("Specialty: " + doctorSpecialty);
