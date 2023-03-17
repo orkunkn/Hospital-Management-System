@@ -1,15 +1,13 @@
 public class Doctor {
-    String doctorName;
-    String doctorSpecialty;
-    int doctorID;
-    int doctorExperiment;
 
-    Doctor(String doctorName, String doctorSpecialty,
-           int doctorID, int doctorExperiment){
+
+    public String doctorName;
+    private String doctorSpecialty;
+    private int doctorID;
+    private int doctorExperiment;
+
+    Doctor(String doctorName){
         this.doctorName = doctorName;
-        this.doctorSpecialty = doctorSpecialty;
-        this.doctorID = doctorID;
-        this.doctorExperiment = doctorExperiment;
     }
 
     void printInfos(){
@@ -19,7 +17,28 @@ public class Doctor {
         System.out.println("Experiment(Year): " + doctorExperiment);
     }
 
+    public String getDoctorSpecialty() {
+        return doctorSpecialty;
+    }
 
+    public int getDoctorID() {
+        return doctorID;
+    }
 
+    public int getDoctorExperiment() {
+        return doctorExperiment;
+    }
+
+    public void setDoctorSpecialty(String doctorSpecialty) {
+        this.doctorSpecialty = doctorSpecialty;
+    }
+
+    public void setDoctorID(int doctorID) {
+        this.doctorID = doctorID;
+    }
+
+    public void setDoctorExperiment(int doctorExperiment) {
+        this.doctorExperiment = doctorExperiment;
+    }
 
 }
