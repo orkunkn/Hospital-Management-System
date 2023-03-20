@@ -1,16 +1,19 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class DoctorGUI {
-    public static int width = 900;
-    public static int height = 900;
+public class DoctorGUI extends JFrame {
+    // Width and height of the window
+    public int width = 800;
+    public int height = 600;
 
-    public static void main(String[] args) {
+    public DoctorGUI() {
+        // Create the frame
         JFrame frame = new JFrame("Doctor Page");
+        // Window settings
         frame.setLocation(new Point(550, 250));
-        final JLabel label = new JLabel();
-        label.setBounds(0, 0, width, height);
-        frame.setSize(900, 900);
+        frame.setSize(width, height);
+        frame.setResizable(false);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
         frame.setVisible(true);
     }
